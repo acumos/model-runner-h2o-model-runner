@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f619b21c_1a8be7bb",
+        "filename": ".gitreview",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 225
+      },
+      "writtenOn": "2018-09-12T22:28:23Z",
+      "side": 1,
+      "message": "is this RDS or h2o?",
+      "revId": "3ae6e9ce7263af7912805cc31b501fad803fa34d",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "deac3434_56c722e1",
+        "filename": "INFO.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 225
+      },
+      "writtenOn": "2018-09-12T22:28:23Z",
+      "side": 1,
+      "message": "RDS? H2O?",
+      "revId": "3ae6e9ce7263af7912805cc31b501fad803fa34d",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cf25a71e_346e409b",
+        "filename": "LICENSE.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 225
+      },
+      "writtenOn": "2018-09-12T22:28:23Z",
+      "side": 1,
+      "message": "remove techM",
+      "revId": "3ae6e9ce7263af7912805cc31b501fad803fa34d",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a7b6b803_ee37fb30",
+        "filename": "README.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 225
+      },
+      "writtenOn": "2018-09-12T22:28:23Z",
+      "side": 1,
+      "message": "remove techM",
+      "revId": "3ae6e9ce7263af7912805cc31b501fad803fa34d",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "92cf5852_dbc5e7fb",
+        "filename": "docs/index.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 225
+      },
+      "writtenOn": "2018-09-12T22:28:23Z",
+      "side": 1,
+      "message": "is this RDS or H2O?",
+      "revId": "3ae6e9ce7263af7912805cc31b501fad803fa34d",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "50ce2cb7_68fc7de6",
+        "filename": "docs/overview.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 225
+      },
+      "writtenOn": "2018-09-12T22:28:23Z",
+      "side": 1,
+      "message": "is this RDS or h2o?",
+      "revId": "3ae6e9ce7263af7912805cc31b501fad803fa34d",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a878abdd_ebf791c9",
+        "filename": "predictor/api/endpoints/predictor.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 225
+      },
+      "writtenOn": "2018-09-12T22:28:23Z",
+      "side": 1,
+      "message": "remove techM",
+      "revId": "3ae6e9ce7263af7912805cc31b501fad803fa34d",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5df2949e_879cf4f6",
+        "filename": "predictor/api/namespaces.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 225
+      },
+      "writtenOn": "2018-09-12T22:28:23Z",
+      "side": 1,
+      "message": "remove techM",
+      "revId": "3ae6e9ce7263af7912805cc31b501fad803fa34d",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f0dd042_4d128db7",
+        "filename": "predictor/api/parser.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 225
+      },
+      "writtenOn": "2018-09-12T22:28:23Z",
+      "side": 1,
+      "message": "remove techM",
+      "revId": "3ae6e9ce7263af7912805cc31b501fad803fa34d",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
