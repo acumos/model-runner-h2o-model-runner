@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cb819a72_318bc766",
+        "filename": "LICENSE.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 225
+      },
+      "writtenOn": "2018-09-12T16:19:48Z",
+      "side": 1,
+      "message": "remove tech mahindra",
+      "revId": "268a5f17534864e888656e00e6f367483576788c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ccd4734_0e1ddaec",
+        "filename": "microservice_flask.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 225
+      },
+      "writtenOn": "2018-09-12T16:19:48Z",
+      "side": 1,
+      "message": "remove tech mahindra",
+      "revId": "268a5f17534864e888656e00e6f367483576788c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
