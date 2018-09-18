@@ -42,17 +42,17 @@ def test_get_status(test_client):
 def test_get_asyncPredictions(test_client):
 
     body = {
-        'readDatasetKey': 'm09286_1530026027076_855258959068650452',
-        'writeDatasetKey': 'm09286_1530026122667_683407214566211287'
+        'readDatasetKey': 'm092XX_1530026027076_855258959068650452',
+        'writeDatasetKey': 'm092XX_1530026122667_683407214566211287'
     }
 
     request_headers = {
         'content-type': 'application/json',
         'accept': 'application/json',
-        'ATT-ModelVersion': '1.0',
-        'ATT-ModelKey': 'com-att-cmlp_m09286_ST_CMLPPLGRD_pmmlModelIris',
-        'ATT-MessageId': 'rh1832_callback_id1',
-        'ATT-ReturnURL': 'http://localhost:8123/v2/callback'
+        'ACUMOS-ModelVersion': '1.0',
+        'ACUMOS-ModelKey': 'com-comp-acumos_m092XX_ST_ACUMOS_pmmlModelIris',
+        'ACUMOS-MessageId': 'rh1832_callback_id1',
+        'ACUMOS-ReturnURL': 'http://localhost:8123/v2/callback'
     }
 
     response = test_client.post(BASE_URL + 'asyncPredictions', data=json.dumps(body), headers=request_headers)
@@ -73,8 +73,8 @@ def test_get_syncPredictions(test_client):
     request_headers = {
         'content-type': 'text/csv',
         'accept': 'text/csv',
-        'ATT-ModelVersion': '1.0',
-        'ATT-ModelKey': 'com-att-cmlp_rh1832_ST_CMLPPLGRD_pmmlModelIris'
+        'ACUMOS-ModelVersion': '1.0',
+        'ACUMOS-ModelKey': 'com-comp-acumos_m092XX_ST_ACUMOS_pmmlModelIris'
     }
 
     response = test_client.post(BASE_URL + 'syncPredictions', data=body, headers=request_headers)
