@@ -1,6 +1,5 @@
-#
 # ===============LICENSE_START=======================================================
-# Acumos
+# Acumos Apache-2.0
 # ===================================================================================
 # Copyright (C) 2018 AT&T Intellectual Property. All rights reserved.
 # ===================================================================================
@@ -9,24 +8,31 @@
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+# http://www.apache.org/licenses/LICENSE-2.0
 #
 # This file is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ===============LICENSE_END=========================================================
-from flask import Blueprint
-from flask_restplus import Api
+from cmlpcommon.config_util import get_properties_path
+
+import json
+import logging
+import logging.config
+import os
 
 
-blueprint = Blueprint('cmlp', __name__, url_prefix='/v2')
-api = Api(
-    blueprint,
-    version=2,
-    title='H2O Predictor',
-    default_label='H2O Predictor',
-    validate=True,
-    description='The H2O Predictor provides a mechanism for scoring models\
-     in H2O Pojo and MOJO format'
-)
+def setup_logging(default_path=None, default_level=logging.INFO, env_key='LOG_CFG'):
+    if default_path is None:
+        default_path = os.path.join(get_properties_path(), 'logging.json')
+    path = default_path
+    value = os.getenv(env_key, None)
+    if value:
+        path = value
+    if os.path.exists(path):
+        with open(path, 'rt') as f:
+            config = json.load(f)
+        logging.config.dictConfig(config)
+    else:
+        logging.basicConfig(level=default_level)
