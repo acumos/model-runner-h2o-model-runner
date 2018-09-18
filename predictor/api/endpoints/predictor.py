@@ -17,9 +17,9 @@
 # limitations under the License.
 # ===============LICENSE_END=========================================================
 from predictor.api.namespaces import predictor_namespace as api
-from predictor.api.parser import sync_request_params, async_request_params
+from predictor.api.parser import sync_request_params
 from predictor.api.parser import status_success_response_body, async_success_response_body
-from predictor.api.parser import error_response_body, error_response_body_500
+from predictor.api.parser import error_response_body, error_response_body_500, async_read_write_fields
 from flask_restplus import Resource, abort
 
 
@@ -33,11 +33,17 @@ class SyncScoringCollection(Resource):
     @api.response(400, 'Bad Request', error_response_body)
     @api.response(413, 'Request Entity Too Large')
     @api.response(500, 'Internal Server Error', error_response_body_500)
-    @api.header('Content-Type', 'The content type of the response body', required=True)
+    @api.header('ACUMOS-DatasetKey', 'The key to the dataset that contains metadata \
+    associated with the input dataset', required=False)
+    @api.header('ACUMOS-ModelVersion', 'Version of the uploaded model.   \
+    If not provided, the latest version of the model will be used.', required=False)
+    @api.header('ACUMOS-ModelKey', 'Key of the model uploaded', required=True)
+    @api.header('Content-Type', 'Set the appropriate content type based on input dataset that\
+    is passed in the body.  For example, for csv set the content type text/csv', required=True)
     @api.expect(sync_request_params, validate=False)
     def post(self):
         """
-        Score the specified model against the specified dataset payload to get a prediction
+        Perform synchronous scoring/prediction with the specified model against the dataset provided in-band in the payload.
         """
         placeholder()
 
@@ -48,15 +54,20 @@ class AsyncScoringCollection(Resource):
     @api.response(400, 'Bad Request', error_response_body)
     @api.response(413, 'Request Entity Too Large')
     @api.response(500, 'Internal Server Error', error_response_body_500)
-    @api.header('ATT-MessageId', 'This is the correlation id to associate the callback response to.', required=False)
-    @api.header('Content-Type', 'application/json', required=True)
-    @api.expect(async_request_params, validate=True)
+    @api.header('ACUMOS-MessageId', 'VPass in a unique id to correlate the callback response.  \
+    This id will be echoed back in the header of the callback/webhooks notification through \
+    the callback url', required=False)
+    @api.header('ACUMOS-CallbackURL', 'This is the callback url to which the service will send a\
+     callback/webhooks notification when the scoring has been completed', required=False)
+    @api.header('ACUMOS-ModelVersion', 'Version of the uploaded model.   \
+    If not provided, the latest version of the model will be used.', required=False)
+    @api.header('ACUMOS-ModelKey', 'Key of the model uploaded', required=True)
+    @api.header('Content-Type', 'The content type should be application/json', required=True)
+    @api.expect(async_read_write_fields, validate=True)
     def post(self):
         """
-        Perform asynchronous prediction
-
-        Asynchronously score the specified model against the specified read dataset key and write back to the specified
-        write dataset key
+        Perform asynchronous prediction against the specified model and the specified read dataset key in the payload \
+        and write back the prediction in the specified write back dataset key
         """
         placeholder()
 

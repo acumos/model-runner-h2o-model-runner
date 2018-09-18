@@ -19,3 +19,7 @@
 ========================================
 Acumos H2O Predictor Release Notes
 ========================================
+
+v0.1.0
+======
+- Added initial code with swagger specs and unit test cases.

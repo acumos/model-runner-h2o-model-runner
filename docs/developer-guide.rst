@@ -16,15 +16,15 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-==========================================
+=============================================
 Acumos H2O Predictor Python Developer Guide
-==========================================
+=============================================
 
 Testing
 =======
 
 We use a combination of ``tox``, ``pytest``, and ``flake8`` to test
-``model_management``. Code which is not PEP8 compliant (aside from E501) will be
+``h2o predictor``. Code which is not PEP8 compliant (aside from E501) will be
 considered a failing test. You can use tools like ``autopep8`` to
 “clean” your code as follows:
 
@@ -32,7 +32,7 @@ considered a failing test. You can use tools like ``autopep8`` to
 
     $ pip install autopep8
     $ cd h2o-model-runner
-    $ autopep8 -r --in-place --ignore E501 acumo_h2o-model-runner/ test/
+    $ autopep8 -r --in-place --ignore E501 predictor/ test/
 
 Run tox directly:
 
