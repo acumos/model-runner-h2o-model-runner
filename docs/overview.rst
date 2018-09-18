@@ -17,11 +17,11 @@
 .. ===============LICENSE_END=========================================================
 
 ============================
-H2O Predictor Overview
+H2O Model Runner Overview
 ============================
 
-The Acumos H2O Predictor service scores datasets against a POJO or MOJO H2O model. The Acumos 
-H2O Predictor service is a Flask application that provides RESTFul endpoints,
+The Acumos H2O Model Runner service scores datasets against a POJO or MOJO H2O model. The Acumos 
+H2O Model Runner service is a Flask application that provides RESTFul endpoints,
 with a swagger spec detailing each endpoint.
 
 The source is available from the Linux Foundation Gerrit server:
