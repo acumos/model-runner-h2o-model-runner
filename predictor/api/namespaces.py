@@ -18,4 +18,4 @@
 # ===============LICENSE_END=========================================================
 from flask_restplus import Namespace
 
-predictor_namespace = Namespace('H2O Predictor', description='Predictor engine for scoring H2O model formats', path='/')
+predictor_namespace = Namespace('RDS Predictor', description='Predictor engine for scoring RDS model formats', path='/')
