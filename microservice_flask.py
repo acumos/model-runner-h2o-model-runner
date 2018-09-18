@@ -17,21 +17,55 @@
 # limitations under the License.
 # ===============LICENSE_END=========================================================
 from flask import Flask
-from predictor.api.restplus import api, blueprint
+from predictor.api.custom_api import custom_api, blueprint
 from predictor.api.endpoints.predictor import api as predictor_namespace
 
+import argparse
+import configparser
+import logging
+import os
+
+
 app = Flask(__name__)
+DEFAULT_HOST = '0.0.0.0'
+DEFAULT_PORT = 8061
+
+
+def get_default_properties_path():
+    dir_path = os.path.dirname(os.path.join(os.path.realpath(__file__)))
+    return os.path.join(dir_path, 'properties', 'settings.cfg')
+
+
+def load_properties(config_path):
+    parser = configparser.ConfigParser()
+    parser.read(config_path)
 
 
 def initialize_app(flask_app):
-    api.add_namespace(predictor_namespace)
+    custom_api.namespaces.clear()
+    custom_api.add_namespace(predictor_namespace)
     app.register_blueprint(blueprint)
 
 
-def main():
+def parse_args():
+    default_path = get_default_properties_path()
+
+    parser = argparse.ArgumentParser(description='Run a development server.')
+
+    parser.add_argument('--host', default=DEFAULT_HOST,
+                        help='specify the host used to run the development server (default: {})'.format(DEFAULT_HOST))
+    parser.add_argument('--settings', default=get_default_properties_path(),
+                        help='specify the location of the configuration: (default: {})'.format(default_path))
+
+    parser.add_argument('--port', default=DEFAULT_PORT, type=int,
+                        help='specify the port used to run the development server (default: {})'.format(DEFAULT_PORT))
+
+    return parser.parse_args()
+
+
+if __name__ == "__main__":
+    args = parse_args()
+    load_properties(args.settings)
+
     initialize_app(app)
-    app.run(host='0.0.0.0', debug=True, port=8061)
-
-
-if __name__ == '__main__':
-    main()
+    app.run(host=args.host, debug=True, port=args.port)
