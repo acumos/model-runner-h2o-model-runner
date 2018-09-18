@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #
 # ===============LICENSE_START=======================================================
 # Acumos
@@ -16,3 +17,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ===============LICENSE_END=========================================================
+from .model_manager_service import ModelManagerService, ModelManagerException, CachedModelManagerService
+
+
+__all__ = [
+    ModelManagerService, ModelManagerException, CachedModelManagerService
+]

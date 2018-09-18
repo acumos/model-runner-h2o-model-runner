@@ -17,5 +17,9 @@
 .. ===============LICENSE_END==============================================================
 
 ========================================
-Acumos H2O Predictor Release Notes
+Acumos H2O Model Runner Release Notes
 ========================================
+
+v0.1.0  09-19-2018
+------------------
+- Added initial code with swagger specs and unit test cases.
