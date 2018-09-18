@@ -1,6 +1,6 @@
-# Acumos H2O Predictor Service
+# Acumos H2O Model Runner Service
 
-This repository holds the server components of the H2O Predictor Service
+This repository holds the server components of the H2O Model Runner Service
 for the Acumos machine-learning platform.  The service provides scoring mechanisms
 for H2O based models.
 
