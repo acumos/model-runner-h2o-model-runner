@@ -26,11 +26,11 @@ with a swagger spec detailing each endpoint.
 
 The source is available from the Linux Foundation Gerrit server:
 
-    https://gerrit.acumos.org/r/gitweb?p=on-boarding/model-runner/h2o-model-runner.git;a=summary
+    https://gerrit.acumos.org/r/gitweb?p=model-runner/h2o-model-runner.git;a=summary
 
 The CI/CD jobs are in the Linux Foundation Jenkins server:
 
-    https://jenkins.acumos.org/view/on-boarding-model-runner/
+    https://jenkins.acumos.org/view/model-runner/
 
 Issues are tracked in the Linux Foundation Jira server:
 

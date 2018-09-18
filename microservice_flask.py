@@ -17,14 +17,15 @@
 # limitations under the License.
 # ===============LICENSE_END=========================================================
 from flask import Flask
-from predictor.api.restplus import api, blueprint
+from predictor.api.custom_api import custom_api, blueprint
 from predictor.api.endpoints.predictor import api as predictor_namespace
 
 app = Flask(__name__)
 
 
 def initialize_app(flask_app):
-    api.add_namespace(predictor_namespace)
+    custom_api.namespaces.clear()
+    custom_api.add_namespace(predictor_namespace)
     app.register_blueprint(blueprint)
 
 
