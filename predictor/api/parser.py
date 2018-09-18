@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #
 # ===============LICENSE_START=======================================================
 # Acumos
@@ -19,87 +20,25 @@
 from flask_restplus import reqparse, fields
 from predictor.api.namespaces import predictor_namespace as api
 
+
 sync_request_params = reqparse.RequestParser()
 
-sync_request_params.add_argument('rawCSV',
-                                 type=str,
-                                 location='form',
+
+sync_request_params.add_argument('payload',
+                                 type=list,
                                  required=True,
-                                 help='Raw CSV to score model against')
+                                 help='Raw CSV',
+                                 location='json')
 
-sync_request_params.add_argument('Content-Type',
-                                 type=str,
-                                 location='headers',
-                                 required=True,
-                                 help='Set the appropriate content type based on input dataset that\
-                                 is passed in the body.  For example, for csv set the content type text/csv')
 
-sync_request_params.add_argument('ATT-ModelKey',
-                                 type=str,
-                                 location='headers',
-                                 required=True,
-                                 help='Key of the model uploaded')
+async_read_write_fields = api.model('Async Predictor Fields', {
+    'readDatasetKey': fields.String(required=True, description='Name of the Predictor.',
+                                    example='PMMLPredictor', location='json'),
+    'writeDatasetKey': fields.String(required=True, example='PMML', location='json'),
 
-sync_request_params.add_argument('ATT-ModelVersion',
-                                 type=str,
-                                 location='headers',
-                                 required=False,
-                                 help='Version of the uploaded model.   If not provided, the latest\
-                                 version of the model will be used.')
 
-sync_request_params.add_argument('ATT-DatasetKey',
-                                 type=str,
-                                 location='headers',
-                                 required=False,
-                                 help='The key to the dataset that contains metadata associated with the input dataset')
 
-async_request_params = reqparse.RequestParser()
-
-async_request_params.add_argument('Content-Type',
-                                  type=str,
-                                  location='headers',
-                                  required=True,
-                                  help='Set the appropriate content type based on input dataset that is passed in the\
-                                  body.  For example, for csv set the content type text/csv')
-
-async_request_params.add_argument('ATT-ModelKey',
-                                  type=str,
-                                  location='headers',
-                                  required=True,
-                                  help='Key of the model uploaded')
-
-async_request_params.add_argument('ATT-ModelVersion',
-                                  type=str,
-                                  location='headers',
-                                  required=False,
-                                  help='Version of the uploaded model.   If not provided, the latest version of \
-                                  the model will be used.')
-
-async_request_params.add_argument('ATT-MessageId',
-                                  type=str,
-                                  location='headers',
-                                  required=False,
-                                  help='Pass in a unique id to correlate the callback response.  This id will be echoed\
-                                   back in the header of the callback/webhooks notification through the callback url')
-
-async_request_params.add_argument('ATT-CallbackURL',
-                                  type=str,
-                                  location='headers',
-                                  required=False,
-                                  help='This is the callback url to which the service will send a callback/webhooks \
-                                  notification when the scoring has been completed')
-
-async_request_params.add_argument('readDatasetKey',
-                                  type=str,
-                                  location='json',
-                                  required=True,
-                                  help='Dataset key from which the input dataset will be pulled for scoring')
-
-async_request_params.add_argument('writeDatasetKey',
-                                  type=str,
-                                  location='json',
-                                  required=True,
-                                  help='Dataset key to which the predictions results will be written back')
+})
 
 
 async_success_response_body = api.model('Async Prediction Response', {
@@ -116,7 +55,7 @@ status_success_response_body = api.model('Status Response', {
     'status': fields.String(description='This is the status of the async prediction request.',
                             required=True,
                             example="Success-Job Completed"),
-    'messageId': fields.String(description='This is ATT-MessageId passed by the client in the async request header',
+    'messageId': fields.String(description='This is ACUMOS-MessageId passed by the client in the async request header',
                                required=False,
                                example="156144651"),
 })

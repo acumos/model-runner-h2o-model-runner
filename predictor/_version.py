@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #
 # ===============LICENSE_START=======================================================
 # Acumos
@@ -16,17 +17,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ===============LICENSE_END=========================================================
-from flask import Blueprint
-from flask_restplus import Api
-
-
-blueprint = Blueprint('cmlp', __name__, url_prefix='/v2')
-api = Api(
-    blueprint,
-    version=2,
-    title='H2O Predictor',
-    default_label='H2O Predictor',
-    validate=True,
-    description='The H2O Predictor provides a mechanism for scoring models\
-     in H2O Pojo and MOJO format'
-)
+__version__ = '0.1.0'
