@@ -40,9 +40,9 @@ setup(
     description=""""H2O Predictor provides the capability to run predictions on H2O and POJO
     and MOJO models and runs predictions either synchronously or asynchronously.""",
     install_requires=['Flask>=1.0.2',
-                      'flask-restplus>=0.11.0',
+                      'flask-restplus>=0.10.1',
                       'gunicorn>=19.9.0',
-                      'flask-cors>=3.0.6'],
+                      'flask-cors>=3.0.3'],
     keywords='acumos machine learning model runner server predictor h2o ml ai',
     license='Apache License 2.0',
     long_description=long_description,
