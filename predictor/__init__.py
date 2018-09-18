@@ -18,6 +18,7 @@
 
 _VERSION = '0.1.0'
 
+
 def get_version():
     # method is used instead of calling _VERSION directly in the event we wish to internally change the way version is
     # stored but still want to do a conversion to make it PEP 440-compliant
