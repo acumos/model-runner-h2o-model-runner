@@ -18,8 +18,12 @@
 # ===============LICENSE_END=========================================================
 import pytest
 import json
+import os
+import requests
 from microservice_flask import app, initialize_app
 
+model_cache_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'model_cache_dir_test')
+os.environ['model_cache_dir'] = model_cache_dir
 BASE_URL = 'http://127.0.0.1:8061/v2/'
 
 
@@ -28,6 +32,15 @@ def test_client():
     testing_client = app.test_client()
     initialize_app(testing_client)
     testing_client.testing = True
+    create_model_file(os.path.join(model_cache_dir, 'model_parts'),
+                      os.path.join(os.path.join(model_cache_dir, '1_0'),
+                                   'h2o'))
+    
+    # Download test model from github
+    
+    r = requests.get('https://github.com/rlhull6/h2o_model/raw/master/h2o')
+    print(r.status_code)
+    
     return testing_client
 
 
@@ -42,17 +55,17 @@ def test_get_status(test_client):
 def test_get_asyncPredictions(test_client):
 
     body = {
-        'readDatasetKey': 'm09286_1530026027076_855258959068650452',
-        'writeDatasetKey': 'm09286_1530026122667_683407214566211287'
+        'readDatasetKey': 'm092XX_1530026027076_855258959068650452',
+        'writeDatasetKey': 'm092XX_1530026122667_683407214566211287'
     }
 
     request_headers = {
         'content-type': 'application/json',
         'accept': 'application/json',
-        'ATT-ModelVersion': '1.0',
-        'ATT-ModelKey': 'com-att-cmlp_m09286_ST_CMLPPLGRD_pmmlModelIris',
-        'ATT-MessageId': 'rh1832_callback_id1',
-        'ATT-ReturnURL': 'http://localhost:8123/v2/callback'
+        'ACUMOS-ModelVersion': '1_0',
+        'ACUMOS-ModelKey': 'h2o',
+        'ACUMOS-MessageId': 'rh1832_callback_id1',
+        'ACUMOS-ReturnURL': 'http://localhost:8123/v2/callback'
     }
 
     response = test_client.post(BASE_URL + 'asyncPredictions', data=json.dumps(body), headers=request_headers)
@@ -73,10 +86,27 @@ def test_get_syncPredictions(test_client):
     request_headers = {
         'content-type': 'text/csv',
         'accept': 'text/csv',
-        'ATT-ModelVersion': '1.0',
-        'ATT-ModelKey': 'com-att-cmlp_rh1832_ST_CMLPPLGRD_pmmlModelIris'
+        'ACUMOS-ModelVersion': '1_0',
+        'ACUMOS-ModelKey': 'h2o'
     }
 
     response = test_client.post(BASE_URL + 'syncPredictions', data=body, headers=request_headers)
-    assert response.status_code == 501
-    assert json.loads(response.get_data())['message'] == 'Method not yet implemented'
+    assert response.status_code == 200
+    assert len(response.get_data()) > 5
+
+# This is needed since we are limited by the size of each binary file in the repository.
+# The zipped model file is split up into 1.4 mb chunks
+def create_model_file(fromdir, tofile):
+    chunksize = int(1.4 * 1024 * 1000)
+    output = open(tofile, 'wb')
+    parts  = os.listdir(fromdir)
+    parts.sort(  )
+    for filename in parts:
+        filepath = os.path.join(fromdir, filename)
+        fileobj  = open(filepath, 'rb')
+        while 1:
+            filebytes = fileobj.read(chunksize)
+            if not filebytes: break
+            output.write(filebytes)
+        fileobj.close(  )
+    output.close(  )
