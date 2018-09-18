@@ -20,7 +20,7 @@ from flask import Blueprint
 from flask_restplus import Api
 
 
-blueprint = Blueprint('cmlp', __name__, url_prefix='/v2')
+blueprint = Blueprint('acumos', __name__, url_prefix='/v2')
 api = Api(
     blueprint,
     version=2,

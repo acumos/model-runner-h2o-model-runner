@@ -27,5 +27,6 @@ Acumos H2O Predictor
    overview
    release-notes
    developer-guide
+   database-install
 
 * :ref:`search`

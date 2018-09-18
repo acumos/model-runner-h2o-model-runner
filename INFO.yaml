@@ -5,10 +5,10 @@ project_category: ''
 lifecycle_state: 'Incubation'
 project_lead: &acumos_model-runner_ptl
     name: 'Bryan Sullivan'
-    email: 'TBD@research.att.com'
-    id: 'TBD'
+    email: 'bryan.sullivan@research.att.com'
+    id: 'bs3131'
     company: 'AT&T Labs-Research'
-    timezone: 'America/New_York'
+    timezone: 'America/Los_Angeles'
 primary_contact: *acumos_model-runner_ptl
 issue_tracking:
     type: 'jira'
@@ -38,6 +38,6 @@ committers:
       email: 'rh1832.att.com'
       company: 'ATT'
       id: 'rh1832'
-      timezone: 'America/New_York'
+      timezone: 'America/Chicago'
 tsc:
     approval: 'https://lists.acumos.org/g/tscgeneral'
