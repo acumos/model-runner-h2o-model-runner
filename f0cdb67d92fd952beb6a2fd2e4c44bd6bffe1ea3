@@ -1,0 +1,221 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "92bca5db_cd4bc478",
+        "filename": "docs/database-install.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-09-19T12:14:58Z",
+      "side": 1,
+      "message": "Pls fix line length",
+      "revId": "f0cdb67d92fd952beb6a2fd2e4c44bd6bffe1ea3",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ed964ac_fb988d55",
+        "filename": "docs/index.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-09-19T12:14:58Z",
+      "side": 1,
+      "message": "Is this a predictor or a model runner?",
+      "range": {
+        "startLine": 20,
+        "startChar": 11,
+        "endLine": 20,
+        "endChar": 20
+      },
+      "revId": "f0cdb67d92fd952beb6a2fd2e4c44bd6bffe1ea3",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8e4c727d_13d7dead",
+        "filename": "docs/index.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-09-19T12:14:58Z",
+      "side": 1,
+      "message": "Pls fix line len",
+      "revId": "f0cdb67d92fd952beb6a2fd2e4c44bd6bffe1ea3",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bd990be7_36d79d5f",
+        "filename": "docs/overview.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-09-19T12:14:58Z",
+      "side": 1,
+      "message": "Pls add lic hdr",
+      "revId": "f0cdb67d92fd952beb6a2fd2e4c44bd6bffe1ea3",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "30856d20_e0fc2f7d",
+        "filename": "docs/overview.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-09-19T12:14:58Z",
+      "side": 1,
+      "message": "Predictor or model runner? I  think since the project and repo are named \"model runner\" / \"h2o model runner\" it would be helpful to use those terms in the RST docs.",
+      "range": {
+        "startLine": 20,
+        "startChar": 4,
+        "endLine": 20,
+        "endChar": 13
+      },
+      "revId": "f0cdb67d92fd952beb6a2fd2e4c44bd6bffe1ea3",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9bec7b74_5d0196d9",
+        "filename": "docs/overview.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-09-19T12:14:58Z",
+      "side": 1,
+      "message": "Pls fix line length",
+      "revId": "f0cdb67d92fd952beb6a2fd2e4c44bd6bffe1ea3",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b503edb5_c5d048da",
+        "filename": "docs/overview.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-09-19T12:14:58Z",
+      "side": 1,
+      "message": "When will you submit a new JJB yaml file to ci-management repo that will create this job?",
+      "range": {
+        "startLine": 33,
+        "startChar": 4,
+        "endLine": 33,
+        "endChar": 48
+      },
+      "revId": "f0cdb67d92fd952beb6a2fd2e4c44bd6bffe1ea3",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "eef876d4_81b881d4",
+        "filename": "docs/release-notes.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-09-19T12:14:58Z",
+      "side": 1,
+      "message": "Is this a \"predictor\" or a \"model runner\" ?",
+      "range": {
+        "startLine": 20,
+        "startChar": 11,
+        "endLine": 20,
+        "endChar": 20
+      },
+      "revId": "f0cdb67d92fd952beb6a2fd2e4c44bd6bffe1ea3",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "64e7a46a_325d972d",
+        "filename": "docs/release-notes.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-09-19T12:14:58Z",
+      "side": 1,
+      "message": "Pls fix line len",
+      "revId": "f0cdb67d92fd952beb6a2fd2e4c44bd6bffe1ea3",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c8ea8626_6b71e8b7",
+        "filename": "docs/release-notes.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-09-19T12:14:58Z",
+      "side": 1,
+      "message": "Please add date",
+      "revId": "f0cdb67d92fd952beb6a2fd2e4c44bd6bffe1ea3",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "763e9db9_8f910b48",
+        "filename": "setup.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-09-19T12:14:58Z",
+      "side": 1,
+      "message": "Will you push this to PyPI ?",
+      "range": {
+        "startLine": 52,
+        "startChar": 9,
+        "endLine": 52,
+        "endChar": 87
+      },
+      "revId": "f0cdb67d92fd952beb6a2fd2e4c44bd6bffe1ea3",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
