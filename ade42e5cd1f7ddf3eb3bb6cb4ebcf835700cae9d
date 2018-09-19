@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3cb7f4d1_1ea34d7a",
+        "filename": "predictor/api/custom_api.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-09-19T15:39:22Z",
+      "side": 1,
+      "message": "I saw some guidance about removing this character sequence everywhere, the Java projects are doing so, does that apply here also?",
+      "range": {
+        "startLine": 60,
+        "startChar": 23,
+        "endLine": 60,
+        "endChar": 27
+      },
+      "revId": "ade42e5cd1f7ddf3eb3bb6cb4ebcf835700cae9d",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
