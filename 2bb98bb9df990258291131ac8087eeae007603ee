@@ -1,0 +1,225 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8b38022c_6f1a545c",
+        "filename": "acumoscommon/responses.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 252
+      },
+      "writtenOn": "2018-10-03T21:32:36Z",
+      "side": 1,
+      "message": "Add LICENSE at the top",
+      "revId": "2bb98bb9df990258291131ac8087eeae007603ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2b424a1a_70ddbdfa",
+        "filename": "acumoscommon/responses.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 252
+      },
+      "writtenOn": "2018-10-03T21:32:36Z",
+      "side": 1,
+      "message": "CMLPResource -\u003e AcumosResource",
+      "revId": "2bb98bb9df990258291131ac8087eeae007603ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "133f3675_cdd569c6",
+        "filename": "acumoscommon/responses.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 252
+      },
+      "writtenOn": "2018-10-03T21:32:36Z",
+      "side": 1,
+      "message": "Please remove this code",
+      "revId": "2bb98bb9df990258291131ac8087eeae007603ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b24b4ca4_f931773e",
+        "filename": "acumoscommon/services/model_manager_service.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 252
+      },
+      "writtenOn": "2018-10-03T21:32:36Z",
+      "side": 1,
+      "message": "Add license at the top",
+      "revId": "2bb98bb9df990258291131ac8087eeae007603ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "321c78df_0d200cce",
+        "filename": "acumoscommon/services/model_manager_service.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 252
+      },
+      "writtenOn": "2018-10-03T21:32:36Z",
+      "side": 1,
+      "message": "Please remove this method for now. We will only need to download the model",
+      "revId": "2bb98bb9df990258291131ac8087eeae007603ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1e7fe585_4779f6f6",
+        "filename": "acumoscommon/services/model_manager_service.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 252
+      },
+      "writtenOn": "2018-10-03T21:32:36Z",
+      "side": 1,
+      "message": "Please remove this method",
+      "revId": "2bb98bb9df990258291131ac8087eeae007603ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7b58b759_ca9f58ee",
+        "filename": "predictor/api/endpoints/predictor.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 252
+      },
+      "writtenOn": "2018-10-03T21:32:36Z",
+      "side": 1,
+      "message": "Let\u0027s keep scoring in-line for now, so please remove asyncPredictions",
+      "revId": "2bb98bb9df990258291131ac8087eeae007603ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "024970b6_091c8324",
+        "filename": "predictor/api/endpoints/predictor.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 252
+      },
+      "writtenOn": "2018-10-03T21:32:36Z",
+      "side": 1,
+      "message": "Please remove this as well as it\u0027s tied to asyncPredictions",
+      "revId": "2bb98bb9df990258291131ac8087eeae007603ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a8a396c3_e22c9d0c",
+        "filename": "predictor/api/namespaces.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 252
+      },
+      "writtenOn": "2018-10-03T21:32:36Z",
+      "side": 1,
+      "message": "RDS -\u003e H2O",
+      "revId": "2bb98bb9df990258291131ac8087eeae007603ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dc268806_cc5a6326",
+        "filename": "predictor/api/parser.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 252
+      },
+      "writtenOn": "2018-10-03T21:32:36Z",
+      "side": 1,
+      "message": "Please remove",
+      "revId": "2bb98bb9df990258291131ac8087eeae007603ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "02014d81_7ef9e89e",
+        "filename": "predictor/h2o/wrapper.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 252
+      },
+      "writtenOn": "2018-10-03T21:32:36Z",
+      "side": 1,
+      "message": "At license at the top",
+      "revId": "2bb98bb9df990258291131ac8087eeae007603ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cd031917_37643d42",
+        "filename": "properties/settings.cfg",
+        "patchSetId": 12
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 252
+      },
+      "writtenOn": "2018-10-03T21:32:36Z",
+      "side": 1,
+      "message": "Remove dmeingress_timeout as it is not used.",
+      "revId": "2bb98bb9df990258291131ac8087eeae007603ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "95b4209d_64ed0a63",
+        "filename": "properties/settings.cfg",
+        "patchSetId": 12
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 252
+      },
+      "writtenOn": "2018-10-03T21:32:36Z",
+      "side": 1,
+      "message": "The H2O Model Runner does store any results, so please remove this setting as well.",
+      "revId": "2bb98bb9df990258291131ac8087eeae007603ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
