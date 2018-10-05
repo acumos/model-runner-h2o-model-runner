@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9fac40a1_969ac154",
+        "filename": "INFO.yaml",
+        "patchSetId": 16
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-10-05T13:04:13Z",
+      "side": 1,
+      "message": "I really don\u0027t believe that Bryan is PTL for acumos model runners project; did I ask this before?",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 26
+      },
+      "revId": "933fc1a752d4de8b4d7c79a0bab994428686b236",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
