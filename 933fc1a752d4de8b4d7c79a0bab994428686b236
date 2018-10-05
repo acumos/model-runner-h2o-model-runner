@@ -22,6 +22,160 @@
       "revId": "933fc1a752d4de8b4d7c79a0bab994428686b236",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bc2e171d_f0b78eb6",
+        "filename": "docs/developer-guide.rst",
+        "patchSetId": 16
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-10-05T13:13:55Z",
+      "side": 1,
+      "message": "The project is model runner, perhaps it would be better to use that name here, instead of Predictor?",
+      "range": {
+        "startLine": 20,
+        "startChar": 11,
+        "endLine": 20,
+        "endChar": 20
+      },
+      "revId": "933fc1a752d4de8b4d7c79a0bab994428686b236",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "15d20d63_276ae2cb",
+        "filename": "docs/developer-guide.rst",
+        "patchSetId": 16
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-10-05T13:13:55Z",
+      "side": 1,
+      "message": "Sample model creation is a USER GUIDE sort of thing.  This document should explain design decisions, how to build/extend/run/test, all that good stuff.",
+      "range": {
+        "startLine": 37,
+        "startChar": 7,
+        "endLine": 37,
+        "endChar": 12
+      },
+      "revId": "933fc1a752d4de8b4d7c79a0bab994428686b236",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9d5121b7_587703aa",
+        "filename": "docs/developer-guide.rst",
+        "patchSetId": 16
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-10-05T13:13:55Z",
+      "side": 1,
+      "message": "Please remove windows-specific paths, user-specific ATT UIDs, the CMLP acronym, etc.",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 120
+      },
+      "revId": "933fc1a752d4de8b4d7c79a0bab994428686b236",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f653181_8c2c8223",
+        "filename": "docs/developer-guide.rst",
+        "patchSetId": 16
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-10-05T13:13:55Z",
+      "side": 1,
+      "message": "A quickstart guide to testing would be REALLY helpful -- what all has to be available/installed, how to configure, etc.",
+      "revId": "933fc1a752d4de8b4d7c79a0bab994428686b236",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "31aef093_acccb452",
+        "filename": "predictor/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-10-05T13:13:55Z",
+      "side": 1,
+      "message": "No big deal, but if you can, please avoid committing whitespace-only changes like this, it just clutters your commits.",
+      "revId": "933fc1a752d4de8b4d7c79a0bab994428686b236",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "636491fe_ee5054be",
+        "filename": "predictor/api/business.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-10-05T13:13:55Z",
+      "side": 1,
+      "message": "Please consistent with license headers",
+      "revId": "933fc1a752d4de8b4d7c79a0bab994428686b236",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8c08378c_06db2e62",
+        "filename": "predictor/util/logging_config.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-10-05T13:13:55Z",
+      "side": 1,
+      "message": "Pls add license header",
+      "revId": "933fc1a752d4de8b4d7c79a0bab994428686b236",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "37b09409_49b40f0c",
+        "filename": "properties/config.ini",
+        "patchSetId": 16
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-10-05T13:13:55Z",
+      "side": 1,
+      "message": "Perhaps a comment to explain this config key?",
+      "revId": "933fc1a752d4de8b4d7c79a0bab994428686b236",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
     }
   ]
 }
