@@ -1,0 +1,6 @@
+pytest
+pytest-cov
+requests
+pexpect
+pytz
+h2o
