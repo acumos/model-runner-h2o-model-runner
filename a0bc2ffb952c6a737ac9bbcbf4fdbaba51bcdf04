@@ -22,6 +22,53 @@
       "revId": "a0bc2ffb952c6a737ac9bbcbf4fdbaba51bcdf04",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "537dab8c_da0b2238",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-10-09T18:58:00Z",
+      "side": 1,
+      "message": "So this should really say predictor/version.py right?",
+      "parentUuid": "ac119f18_b7b44b56",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 82
+      },
+      "revId": "a0bc2ffb952c6a737ac9bbcbf4fdbaba51bcdf04",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "35f20ef6_c2dad99f",
+        "filename": "predictor/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-10-09T18:58:00Z",
+      "side": 1,
+      "message": "This is a variable reference; I bet the value is over in __version.py right?",
+      "range": {
+        "startLine": 19,
+        "startChar": 15,
+        "endLine": 19,
+        "endChar": 35
+      },
+      "revId": "a0bc2ffb952c6a737ac9bbcbf4fdbaba51bcdf04",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
     }
   ]
 }
