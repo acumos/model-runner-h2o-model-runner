@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ac376b38_b2b8cfaa",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-11-09T13:14:31Z",
+      "side": 1,
+      "message": "a tiny tiny thing: would you please remove this blank line in the footer?  all 3 lines should be together",
+      "revId": "794e614e56919d9806ebd8f4237099dc74916c6f",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "64f06cc4_798efe5e",
+        "filename": "Dockerfile",
+        "patchSetId": 4
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-11-09T13:14:31Z",
+      "side": 1,
+      "message": "I recommend you use a tag to pin your build to a known working version. Relying on tag \"latest\" tends to break at really bad times.",
+      "range": {
+        "startLine": 18,
+        "startChar": 5,
+        "endLine": 18,
+        "endChar": 27
+      },
+      "revId": "794e614e56919d9806ebd8f4237099dc74916c6f",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
