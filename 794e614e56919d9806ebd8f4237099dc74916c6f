@@ -1,0 +1,9 @@
+Verified+1: Acumos Jobbuilder <acumos-jobbuilder@jenkins.acumos.org>
+Code-Review+1: Ryan Hull <rh1832@att.com>
+Code-Review+1: Chris Lott <clott@research.att.com>
+Code-Review+2: Abhishek Khandelwal <ak983d@att.com>
+Submitted-by: Abhishek Khandelwal <ak983d@att.com>
+Submitted-at: Mon, 12 Nov 2018 16:27:23 +0000
+Reviewed-on: https://gerrit.acumos.org/r/3288
+Project: model-runner/h2o-model-runner
+Branch: refs/heads/master
